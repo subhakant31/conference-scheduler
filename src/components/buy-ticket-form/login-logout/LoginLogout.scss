@@ -1,0 +1,29 @@
+@import "../../../styles/partials/mixins";
+@import "../../../styles/partials/variables";
+.form{
+    &__heading {
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        position: relative;
+        color: $white;
+      }
+      &__close {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        @media (max-width: 768px) {
+          right: 62px;
+          top: 14px;
+        }
+    
+        i {
+          display: block;
+          visibility: visible;
+          color: $black;
+        }
+      }
+}

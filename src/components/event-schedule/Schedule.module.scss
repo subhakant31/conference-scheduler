@@ -1,0 +1,40 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+
+.schedule-heading-wrapper {
+  color: $white;
+  text-align: center;
+  padding: 160px 0 112px 0;
+
+  &__heading {
+    font-size: 3rem;
+    small {
+      color: $primaryThemeColor;
+      text-transform: capitalize;
+    }
+  }
+  &__heading-schedule {
+    font-size: 4.5rem;
+    text-transform: capitalize;
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+    margin-top: 32px;
+  }
+}
+
+.schedule {
+  max-width: 956px;
+  margin: auto;
+  &__nav {
+    &__dates {
+      @include d-flex($justifyContent: center);
+      @media (max-width: 768px) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+  &__cards {
+    margin-top: 50px;
+  }
+}

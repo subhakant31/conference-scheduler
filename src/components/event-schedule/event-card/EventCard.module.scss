@@ -1,0 +1,58 @@
+@import "../../../styles/partials/variables";
+@import "../../../styles/partials/mixins";
+
+.event-card {
+  margin-bottom: 50px;
+  color: $white;
+
+  @include d-flex($justifyContent: space-between);
+
+  @media (max-width: 768px) {
+    align-items: unset;
+    flex-wrap: wrap;
+  }
+  &__start-end-time {
+    @media (max-width: 768px) {
+      order: 2;
+    }
+  }
+  &__speaker-image-wrapper {
+    width: $eventSpeakerImageSize;
+    height: $eventSpeakerImageSize;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    @media (max-width: 768px) {
+      order: 1;
+    }
+  }
+  &__text-wrapper {
+    @media (max-width: 768px) {
+      order: 1;
+    }
+    width: 70%;
+    &__heading {
+      @include font(
+        $font-size: 1.125rem,
+        $line-height: 1.75rem,
+        $letter-spacing: 0.0625rem,
+        $font-weight: 700
+      );
+    }
+    &__speaker-name {
+      color: $primaryThemeColor;
+      font-weight: 100;
+    }
+    &__topic-brief {
+      @include font(
+        $font-size: 0.875rem,
+        $line-height: 1.5rem,
+        $font-weight: 400,
+        $color: rgb(212, 212, 212)
+      );
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import "../../../styles/partials/mixins";
+@import "../../../styles/partials/variables";
+
+.list-item {
+  width: 100%;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid $inactiveDateBorderColor;
+
+  &__button {
+    h3 {
+      text-transform: uppercase;
+      @include font($font-size: 1.5rem, $line-height: 2rem, $font-weight: 700);
+    }
+    span {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+    outline: none;
+    border: none;
+    max-width: $scheduleBtnWidth;
+    padding: 16px 12px;
+    background-color: transparent;
+    color: $white;
+    cursor: pointer;
+  }
+  &:hover {
+    h3 {
+      color: $primaryThemeColor;
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+}
+.active {
+  border-bottom: 2px solid $primaryThemeColor;
+  button {
+    h3 {
+      color: $primaryThemeColor;
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+}

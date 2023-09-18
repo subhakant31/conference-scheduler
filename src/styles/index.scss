@@ -1,0 +1,21 @@
+// Partials import
+@import "./partials/_functions";
+@import "./partials/_mixins";
+@import "./partials/_reset";
+@import "./partials/_variables";
+//Fonts import
+@import "./fonts.scss";
+
+body {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: $primaryFontSize;
+  background-color: $pageBackgroundColor;
+}
+
+.loader-animation {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}

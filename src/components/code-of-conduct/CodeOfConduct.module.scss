@@ -1,0 +1,43 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+
+.section-heading {
+  margin-bottom: 2rem;
+  max-width: $codeOfConductMaxWidth;
+  @include font($font-size: 1.875rem, $line-height: 2.25rem, $color: $white);
+  text-align: left;
+  text-transform: uppercase;
+  width: 90%;
+  margin: auto;
+  margin-top: $sectionMarginTop;
+}
+.coc-wrapper {
+  max-width: $codeOfConductMaxWidth;
+  width: 90%;
+  margin: auto;
+  color: $white;
+  li {
+    list-style: decimal;
+    margin-left: 20px;
+    &::marker {
+      font-size: 130%;
+    }
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.75rem;
+      margin-bottom: 1.5rem;
+      margin-top: 2rem;
+      text-align: left;
+      text-transform: uppercase;
+      color: $primaryThemeColor;
+    }
+    p {
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      font-weight: 400;
+      color: rgb(212, 212, 212);
+      padding-bottom: 20px;
+    }
+  }
+}
