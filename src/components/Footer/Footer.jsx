@@ -47,7 +47,7 @@ function Footer() {
                       <img
                         className={styles["footer-section__imgwrapper-img"]}
                         src={item.logo.url}
-                        alt="logo"
+                        alt='logo'
                       />
                     </div>
                     <div
@@ -86,7 +86,7 @@ function Footer() {
               <div className={styles["footer-contact"]}>
                 <div className={styles["footer-contact__wrapper"]}>
                   <div className={styles["footer-contact__wrapper-img"]}>
-                    <img src={location} alt="location" />
+                    <img src={location} alt='location' />
                   </div>
                   <div
                     className={
@@ -99,7 +99,7 @@ function Footer() {
                 </div>
                 <div className={styles["footer-contact__wrapper"]}>
                   <div className={styles["footer-contact__wrapper-img"]}>
-                    <img src={call} alt="phone" />
+                    <img src={call} alt='phone' />
                   </div>
                   <div
                     className={
@@ -109,7 +109,7 @@ function Footer() {
                     <span>Phone: +1 7675991332</span>
                     <span>
                       {" "}
-                      <a href="#"> Whatsapp</a>{" "}
+                      <a href='#home'> Whatsapp</a>{" "}
                     </span>
                   </div>
                 </div>
@@ -125,28 +125,28 @@ function Footer() {
                   <img
                     className={styles["footer-section__imgwrapper-img"]}
                     src={react}
-                    alt="react"
+                    alt='react'
                   />
                 </div>
                 <div className={styles["footer-brands__cmn"]}>
                   <img
                     className={styles["footer-section__imgwrapper-img"]}
                     src={jsworld}
-                    alt="JS"
+                    alt='JS'
                   />
                 </div>
                 <div className={styles["footer-brands__cmn"]}>
                   <img
                     className={styles["footer-section__imgwrapper-img"]}
                     src={Vuejs}
-                    alt="vue JS"
+                    alt='vue JS'
                   />
                 </div>
                 <div className={styles["footer-brands__cmn"]}>
                   <img
                     className={styles["footer-section__imgwrapper-img"]}
                     src={dev}
-                    alt="Dev world"
+                    alt='Dev world'
                   />
                 </div>
               </div>
@@ -159,31 +159,31 @@ function Footer() {
               <div className={styles["footer-links"]}>
                 <ul>
                   <li>
-                    <a href="#">Travel Tips</a>
+                    <a href='#home'>Travel Tips</a>
                   </li>
                   <li>
-                    <a href="#">FAQ </a>
+                    <a href='#home'>FAQ </a>
                   </li>
                   <li>
-                    <a href="#">Diversity & Inclusion</a>
+                    <a href='#home'>Diversity & Inclusion</a>
                   </li>
                   <li>
-                    <a href="#">Newsletter</a>
+                    <a href='#home'>Newsletter</a>
                   </li>
                   <li>
-                    <a href="#">JSWorld Podcast</a>
+                    <a href='#home'>JSWorld Podcast</a>
                   </li>
                   <li>
-                    <a href="#">Call for Speakers</a>
+                    <a href='#home'>Call for Speakers</a>
                   </li>
                   <li>
-                    <a href="#">Privacy Policy</a>
+                    <a href='#home'>Privacy Policy</a>
                   </li>
                   <li>
-                    <a href="#">Code of Conduct</a>
+                    <a href='#home'>Code of Conduct</a>
                   </li>
                   <li>
-                    <a href="#">Terms & conditions</a>
+                    <a href='#home'>Terms & conditions</a>
                   </li>
                 </ul>
               </div>

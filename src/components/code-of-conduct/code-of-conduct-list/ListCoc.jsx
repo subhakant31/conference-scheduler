@@ -1,4 +1,3 @@
-import styles from "./ListCoc.module.scss";
 import CocPara from "./Code-of-conduct-para/CocPara";
 import React from "react";
 function ListCoc(props) {

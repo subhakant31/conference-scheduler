@@ -1,9 +1,7 @@
-import { useState } from "react";
 import "./ChangeDateBtn.scss";
 
 function ChangeDateBtn(props, { onDateChange }) {
   console.log(props);
-  const keys = Object.keys(props.dayData);
   const monthNames = [
     "January",
     "February",
@@ -25,7 +23,7 @@ function ChangeDateBtn(props, { onDateChange }) {
 
   return (
     <li className={`list-item ${props.active ? "active" : ""}`}>
-      <button className="list-item__button" onClick={handleChange}>
+      <button className='list-item__button' onClick={handleChange}>
         <h3>{props.buttonTitle}</h3>
         <span>
           {props.dayData.date.day} {}

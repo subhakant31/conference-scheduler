@@ -5,13 +5,13 @@ function Button() {
   return (
     <React.Fragment>
       <div className={classes["button-wrapper"]}>
-        <a href="#" className={classes.button}>
+        <a href='#home' className={classes.button}>
           buy ticket
         </a>
-        <Link to="/location-info" className={classes.button}>
+        <Link to='/location-info' className={classes.button}>
           location
         </Link>
-        <Link to="/food-info" className={classes.button}>
+        <Link to='/food-info' className={classes.button}>
           food info
         </Link>
       </div>

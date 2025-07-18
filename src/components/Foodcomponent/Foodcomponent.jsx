@@ -5,7 +5,6 @@ import chinesefood from "../../assets/images/chinesefood.jpg";
 import breakfast from "../../assets/images/healthy-breakfast.webp";
 import lunch from "../../assets/images/lunch.jpg";
 import dinner from "../../assets/images/dinner.jpg";
-import { faker } from "@faker-js/faker";
 function Foodcomponent() {
   const foodData = [
     {
@@ -49,7 +48,7 @@ function Foodcomponent() {
   return (
     <React.Fragment>
       <div className={styles["food"]}>
-        <img src={wave} alt="wave" />
+        <img src={wave} alt='wave' />
         <div className={styles["food-head"]}>
           <span className={styles["food-head__span"]}>
             The Amazing Taste Of{" "}

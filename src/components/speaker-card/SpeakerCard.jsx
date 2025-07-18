@@ -5,7 +5,7 @@ function SpeakerCard(props) {
   return (
     <li className={styles["speaker-card"]}>
       <div className={styles["speaker-card__img-wrapper"]}>
-        <img src={props.speakerImage} alt="speaker image" loading="lazy" />
+        <img src={props.speakerImage} alt='speaker' loading='lazy' />
       </div>
       <div className={styles["speaker-card__text-wrapper"]}>
         <div className={styles["speaker-card__text-wrapper__first-name"]}>

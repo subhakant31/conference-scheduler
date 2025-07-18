@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./HeroBannerText.module.scss";
-import Button from "../button/Buttton";
 function HeroBannerText(props) {
   const superScript = {
     1: "st",
@@ -42,7 +41,7 @@ function HeroBannerText(props) {
   function DateSupercriptGenerator(numberString) {
     let lastDigit = Math.floor(numberString % 10);
     for (const key in superScript) {
-      if (key == lastDigit) {
+      if (key === lastDigit) {
         return superScript[key];
       }
     }

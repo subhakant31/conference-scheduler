@@ -1,5 +1,4 @@
 import styles from "./Schedule.module.scss";
-import { faker } from "@faker-js/faker";
 import ChangeDateBtn from "./date-switch-btn/ChangeDateBtn";
 import React, { useEffect } from "react";
 import { useState } from "react";
@@ -105,16 +104,16 @@ function Schedule(props) {
         </>
       ) : (
         <ThreeCircles
-          height="100"
-          width="100"
-          color="#4fa94d"
+          height='100'
+          width='100'
+          color='#4fa94d'
           wrapperStyle={{}}
-          wrapperClass="loader-animation"
+          wrapperClass='loader-animation'
           visible={true}
-          ariaLabel="three-circles-rotating"
-          outerCircleColor="#00fff7"
-          innerCircleColor="#fff"
-          middleCircleColor="#7b7b7b"
+          ariaLabel='three-circles-rotating'
+          outerCircleColor='#00fff7'
+          innerCircleColor='#fff'
+          middleCircleColor='#7b7b7b'
         />
       )}
     </React.Fragment>

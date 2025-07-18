@@ -1,5 +1,4 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import styles from "../location-data/LocationData.module.scss";
 
 function LocationData(props) {
@@ -42,7 +41,7 @@ function LocationData(props) {
           </ul>
         </div>
         <div className={styles["location-container__data__map"]}>
-          <iframe src={props.map}></iframe>
+          <iframe src={props.map} title='location'></iframe>
         </div>
       </div>
     </React.Fragment>
